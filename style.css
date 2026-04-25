@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+}
+
+/* 📱 главный контейнер */
+.chat-container {
+    width: 420px;
+    height: 90vh;
+    background: #111827;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 🔝 шапка */
+.header {
+    padding: 15px;
+    background: #1f2937;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 💬 сообщения */
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🧱 базовый стиль сообщения */
+.message {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* 🤖 бот (слева) */
+.bot {
+    background: #374151;
+    align-self: flex-start;
+}
+
+/* 👤 пользователь (справа) */
+.user {
+    background: #3b82f6;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/* ✍️ поле ввода */
+.input-box {
+    display: flex;
+    padding: 10px;
+    background: #1f2937;
+    gap: 8px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.input-box button {
+    padding: 10px 14px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ✨ эффект наведения */
+.message:hover {
+    transform: scale(1.02);
+}
